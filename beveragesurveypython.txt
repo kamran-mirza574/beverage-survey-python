@@ -1,0 +1,43 @@
+x = 1
+y = 1
+c = 0
+t = 0
+ck = 0
+o = 0
+p = 0
+
+print("*****************************************************************")
+print("1. Coffee        2. Tea        3. Coke         4. Orange Juice")
+print("*****************************************************************")
+print("This is a survey for favorite beverages")
+print("")
+print("Choose (1-4) from the above menu or enter 0 to exit the program")
+while x > 0:
+    x = int(input(f"Please enter the favorite beverage of person {y}:"))
+    y+=1
+    if x == 1:
+        c +=1
+        p+=1
+    elif x == 2:
+        t +=1
+        p+=1
+    elif x == 3:
+        ck+=1
+        p+=1
+    elif x == 4:
+        o+=1
+        p+=1
+
+
+    elif x == 0:
+        print("The results are as follows")
+        print(f"The total number of people participated: {p}")
+        print("Beverage                   Number of votes")
+        print("********************************************")
+        print(f"Coffee                     {c}")
+        print(f"Tea                        {t}")
+        print(f"Coke                       {ck}")
+        print(f"Orange Juice               {o}")
+
+    else:
+        print("Invalid input")
